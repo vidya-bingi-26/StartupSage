@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Pitch Review - AI Voice Agent</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="logo">
+        <div class="logo-text">StartupSage<span class="logo-accent">.</span></div>
+        <h1>Startup Pitch Review</h1>
+    </div>
+</header>
+    <div class="container">
+        <!-- In the header section, replace the logo img with logo-text -->
+        
+
+        <!-- Remove the entire testimonials-section div -->
+        <!-- The testimonials-section would be removed from here -->
+
+        <!-- In the footer section, replace the logo img with logo-text -->
+        
+        <main>
+            <div class="pitch-section">
+                <div class="pitch-intro">
+                    <h2>Perfect Your Pitch with AI Investor Feedback</h2>
+                    <p>Get real-time feedback on your startup pitch from our AI voice agent that thinks and responds like a seasoned investor.</p>
+                    <button class="start-btn" id="startPitch">
+                        <i class="fas fa-microphone-alt"></i> Start Your Pitch
+                    </button>
+                </div>
+                
+                <div class="process-visualization">
+                    <h3 class="process-title">Startup Pitch Review Process</h3>
+                    <div class="funnel-container">
+                        <div class="funnel-wrapper">
+                            <img src="assets/funnel.png" alt="Pitch Review Process Funnel" class="funnel-image">
+                        </div>
+                        <div class="process-steps">
+                            <div class="step" id="step1">
+                                <div class="step-icon"><i class="fas fa-external-link-alt"></i></div>
+                                <div class="step-content">
+                                    <h3>Voice Agent Launch</h3>
+                                    <p>Vapi.ai voice agent opens in a new tab.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" id="step2">
+                                <div class="step-icon"><i class="fas fa-microphone"></i></div>
+                                <div class="step-content">
+                                    <h3>Pitch Delivery</h3>
+                                    <p>User speaks their pitch through voice input.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" id="step3">
+                                <div class="step-icon"><i class="fas fa-question-circle"></i></div>
+                                <div class="step-content">
+                                    <h3>Follow-up Questions</h3>
+                                    <p>Agent asks investor-style questions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" id="step4">
+                                <div class="step-icon"><i class="fas fa-comment-dots"></i></div>
+                                <div class="step-content">
+                                    <h3>User Responses</h3>
+                                    <p>User responds to questions via voice.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="step" id="step5">
+                                <div class="step-icon"><i class="fas fa-chart-line"></i></div>
+                                <div class="step-content">
+                                    <h3>Analysis Generation</h3>
+                                    <p>Agent generates SWOT analysis and funding recommendation.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <h2>Why Use Our AI Pitch Review?</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-robot"></i></div>
+                        <h3>AI-Powered Feedback</h3>
+                        <p>Get insights from an AI that thinks like a real investor</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-clock"></i></div>
+                        <h3>Practice Anytime</h3>
+                        <p>Perfect your pitch on your schedule</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-chart-pie"></i></div>
+                        <h3>Detailed Analysis</h3>
+                        <p>Receive comprehensive SWOT analysis</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon"><i class="fas fa-comments"></i></div>
+                        <h3>Natural Conversation</h3>
+                        <p>Interact through voice just like a real pitch meeting</p>
+                    </div>
+                </div>
+            </div>
+
+            
+        </main>
+
+        <div class="pitch-modal" id="pitchModal">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>AI Investor Session</h2>
+                    <button class="close-btn" id="closeModal"><i class="fas fa-times"></i></button>
+                </div>
+                <div class="modal-body">
+                    <div class="agent-avatar">
+                        <div class="avatar-image">
+                            <img src="assets/investor-avatar.png" alt="AI Investor">
+                        </div>
+                        <div class="voice-waves">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                    <div class="conversation-area">
+                        <div class="message agent-message">
+                            <p>Hello, I'm your AI investor. I'm ready to hear your pitch. Please begin when you're ready.</p>
+                        </div>
+                        <!-- Conversation messages will appear here -->
+                    </div>
+                    <div class="controls">
+                        <button class="control-btn" id="muteBtn"><i class="fas fa-microphone-slash"></i></button>
+                        <button class="control-btn primary" id="talkBtn"><i class="fas fa-microphone"></i> Talk</button>
+                        <button class="control-btn" id="pauseBtn"><i class="fas fa-pause"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        
+    </div>
+    <footer>
+      <div class="footer-content">
+          <div class="footer-logo">
+              <div class="footer-logo-text">StartupSage</div>
+              <p>© 2023 StartupSage. All rights reserved.</p>
+          </div>
+          <div class="footer-links">
+              <a href="#">Privacy Policy</a>
+              <a href="#">Terms of Service</a>
+              <a href="#">Contact Us</a>
+          </div>
+      </div>
+  </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
