@@ -29,6 +29,9 @@ An intelligent voice-based agent that listens to a user's startup pitch and prov
 - Integrate with VC databases for automatic market research
 
 - Generate pitch deck suggestions based on the idea
+  
+## 🔗Try it out 
+https://startup-sage-six.vercel.app/
 
 ## 🤝 Contributing
 Pull requests are welcome! For major changes, please open an issue first to discuss what you’d like to change.
